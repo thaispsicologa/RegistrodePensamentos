@@ -12,198 +12,197 @@
 	<title>Registro de Pensamentos Disfuncionais (RPD) - Ferramenta Online</title>
 	<style>
 		body {
-		    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		    background-image: url('https://i.pinimg.com/736x/94/19/f4/9419f4a374cdf22e30e191cfd87102ef.jpg');
-		    background-size: cover;
-		    background-position: center;
-		    background-attachment: fixed;
-		    color: #333;
-		    margin: 0;
-		    padding: 0;
-		    overflow-x: hidden;
-		}
-		
-		header {
-		    background: rgba(0, 0, 0, 0.6);
-		    color: white;
-		    padding: 40px;
-		    text-align: center;
-		    font-size: 28px;
-		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-		}
-		
-		header h1 {
-		    margin: 0;
-		    font-weight: 700;
-		    background: rgba(255, 255, 255, 0.3);
-		    padding: 10px;
-		    border-radius: 10px;
-		}
-		
-		main {
-		    width: 90%;
-		    max-width: 900px;
-		    background-color: rgba(255, 255, 255, 0.9);
-		    margin: 300px auto 30px;
-		    padding: 40px;
-		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-		    border-radius: 18px;
-		    backdrop-filter: blur(10px);
-		    position: relative;
-		    z-index: 2;
-		}
-		
-		label {
-		    display: block;
-		    margin-bottom: 10px;
-		    font-weight: bold;
-		}
-		
-		input[type="text"],
-		select,
-		input[type="date"] {
-		    width: 100%;
-		    padding: 12px;
-		    margin-bottom: 20px;
-		    border: 2px solid #ccc;
-		    border-radius: 18px;
-		    font-size: 16px;
-		    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		    outline: none;
-		    box-sizing: border-box;
-		}
-		
-		input[type="text"]:focus,
-		select:focus,
-		input[type="date"]:focus {
-		    border-color: #5b9bd5;
-		    box-shadow: 0 0 8px rgba(91, 155, 213, 0.5);
-		}
-		
-		.slider {
-		    -webkit-appearance: none;
-		    appearance: none;
-		    width: 100%;
-		    height: 25px;
-		    background: #ddd;
-		    outline: none;
-		    border-radius: 18px;
-		    overflow: hidden;
-		}
-		
-		.slider::-webkit-slider-runnable-track {
-		    background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
-		    height: 100%;
-		}
-		
-		.slider::-moz-range-track {
-		    background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
-		    height: 100%;
-		}
-		
-		button {
-		    background-color: #006400;
-		    color: white;
-		    padding: 12px;
-		    border: none;
-		    border-radius: 18px;
-		    font-size: 18px;
-		    cursor: pointer;
-		    width: 100%;
-		    margin: 20px 0;
-		    transition: background-color 0.3s;
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-		    text-align: center;
-		}
-		
-		button:hover {
-		    background-color: #004d00;
-		}
-		
-		.audio-button {
-		    background: none !important;
-		    border: none !important;
-		    cursor: pointer;
-		    padding: 0;
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-		    outline: none !important;
-		}
-		
-		.audio-button svg {
-		    fill: #FFD700;
-		    width: 41.6px;
-		    height: 41.6px;
-		    animation: blink 1.5s infinite;
-		    transition: transform 0.2s;
-		}
-		
-		.audio-button:hover svg {
-		    transform: scale(1.1);
-		}
-		
-		.audio-button:focus {
-		    outline: none !important;
-		    box-shadow: none !important;
-		    border: none !important;
-		    background-color: transparent !important;
-		}
-		
-		@keyframes blink {
-		    0%, 100% {
-		        opacity: 1;
-		    }
-		    50% {
-		        opacity: 0.5;
-		    }
-		}
-		
-		@media (max-width: 768px) {
-		    main {
-		        width: 95%;
-		        padding: 20px;
-		    }
-		
-		    button {
-		        font-size: 16px;
-		        padding: 10px;
-		    }
-		
-		    .audio-button svg {
-		        width: 32px;
-		        height: 32px;
-		    }
-		}
-		
-		@media (max-width: 480px) {
-		    header {
-		        padding: 20px;
-		        font-size: 20px;
-		    }
-		
-		    header h1 {
-		        font-size: 18px;
-		        padding: 8px;
-		    }
-		
-		    main {
-		        padding: 15px;
-		    }
-		
-		    button {
-		        font-size: 14px;
-		        padding: 8px;
-		    }
-		
-		    .audio-button svg {
-		        width: 28px;
-		        height: 28px;
-		    }
-		}
-		
+				    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				    background-image: url('https://i.pinimg.com/736x/94/19/f4/9419f4a374cdf22e30e191cfd87102ef.jpg');
+				    background-size: cover;
+				    background-position: center;
+				    background-attachment: fixed;
+				    color: #333;
+				    margin: 0;
+				    padding: 0;
+				    overflow-x: hidden;
+				}
+				
+				header {
+				    background: rgba(0, 0, 0, 0.6);
+				    color: white;
+				    padding: 40px;
+				    text-align: center;
+				    font-size: 28px;
+				    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+				}
+				
+				header h1 {
+				    margin: 0;
+				    font-weight: 700;
+				    background: rgba(255, 255, 255, 0.3);
+				    padding: 10px;
+				    border-radius: 10px;
+				}
+				
+				main {
+				    width: 90%;
+				    max-width: 900px;
+				    background-color: rgba(255, 255, 255, 0.9);
+				    margin: 300px auto 30px;
+				    padding: 40px;
+				    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+				    border-radius: 18px;
+				    backdrop-filter: blur(10px);
+				    position: relative;
+				    z-index: 2;
+				}
+				
+				label {
+				    display: block;
+				    margin-bottom: 10px;
+				    font-weight: bold;
+				}
+				
+				input[type="text"],
+				select,
+				input[type="date"] {
+				    width: 100%;
+				    padding: 12px;
+				    margin-bottom: 20px;
+				    border: 2px solid #ccc;
+				    border-radius: 18px;
+				    font-size: 16px;
+				    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				    outline: none;
+				    box-sizing: border-box;
+				}
+				
+				input[type="text"]:focus,
+				select:focus,
+				input[type="date"]:focus {
+				    border-color: #5b9bd5;
+				    box-shadow: 0 0 8px rgba(91, 155, 213, 0.5);
+				}
+				
+				.slider {
+				    -webkit-appearance: none;
+				    appearance: none;
+				    width: 100%;
+				    height: 25px;
+				    background: #ddd;
+				    outline: none;
+				    border-radius: 18px;
+				    overflow: hidden;
+				}
+				
+				.slider::-webkit-slider-runnable-track {
+				    background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
+				    height: 100%;
+				}
+				
+				.slider::-moz-range-track {
+				    background: linear-gradient(to right, green 0%, yellow 50%, red 100%);
+				    height: 100%;
+				}
+				
+				button {
+				    background-color: #006400;
+				    color: white;
+				    padding: 12px;
+				    border: none;
+				    border-radius: 18px;
+				    font-size: 18px;
+				    cursor: pointer;
+				    width: 100%;
+				    margin: 20px 0;
+				    transition: background-color 0.3s;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    text-align: center;
+				}
+				
+				button:hover {
+				    background-color: #004d00;
+				}
+				
+				.audio-button {
+				    background: none !important;
+				    border: none !important;
+				    cursor: pointer;
+				    padding: 0;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    outline: none !important;
+				}
+				
+				.audio-button svg {
+				    fill: #FFD700;
+				    width: 41.6px;
+				    height: 41.6px;
+				    animation: blink 1.5s infinite;
+				    transition: transform 0.2s;
+				}
+				
+				.audio-button:hover svg {
+				    transform: scale(1.1);
+				}
+				
+				.audio-button:focus {
+				    outline: none !important;
+				    box-shadow: none !important;
+				    border: none !important;
+				    background-color: transparent !important;
+				}
+				
+				@keyframes blink {
+				    0%, 100% {
+				        opacity: 1;
+				    }
+				    50% {
+				        opacity: 0.5;
+				    }
+				}
+				
+				@media (max-width: 768px) {
+				    main {
+				        width: 95%;
+				        padding: 20px;
+				    }
+				
+				    button {
+				        font-size: 16px;
+				        padding: 10px;
+				    }
+				
+				    .audio-button svg {
+				        width: 32px;
+				        height: 32px;
+				    }
+				}
+				
+				@media (max-width: 480px) {
+				    header {
+				        padding: 20px;
+				        font-size: 20px;
+				    }
+				
+				    header h1 {
+				        font-size: 18px;
+				        padding: 8px;
+				    }
+				
+				    main {
+				        padding: 15px;
+				    }
+				
+				    button {
+				        font-size: 14px;
+				        padding: 8px;
+				    }
+				
+				    .audio-button svg {
+				        width: 28px;
+				        height: 28px;
+				    }
+				}
 	</style>
 </head>
 
@@ -220,13 +219,13 @@
 						<path d="M8 5.993c-.147 0-.293.054-.414.162L5.825 7.44H4.5A1.5 1.5 0 0 0 3 8.993v1c0 .828.672 1.5 1.5 1.5h1.325l1.761 1.285c.12.107.266.161.414.161.337 0 .586-.252.586-.583V6.576c0-.331-.25-.583-.586-.583z" />
 					</svg>
 				</button>
-				<div id="rpd-expansion" class="expansible-content" style="display: none;">
-					<p> O Registro de Pensamentos Disfuncionais (RPD) é uma técnica da Terapia Cognitivo-Comportamental (TCC) que ajuda a identificar e reestruturar pensamentos automáticos negativos. Preencher o RPD pode ajudar a tornar mais claro como os pensamentos influenciam as emoções e o comportamento. Isso ajuda a promover uma visão mais equilibrada da situação e a reduzir o impacto dos pensamentos negativos. </p>
-					<p> Assista ao vídeo: <a href="https://www.youtube.com/watch?v=qp8VUlVqooI" target="_blank">Como fazer o RPD</a>
-					</p>
-				</div>
-				<audio id="audioRPD" src="https://raw.githubusercontent.com/thaispsicologa/RegistrodePensamentos/main/RPD1.mp3"></audio>
-
+			</button>
+			<p style="text-align: center; font-size: 14px; margin-top: 10px;">Clique no ícone acima para ouvir o áudio explicativo 🎧</p>
+			<div id="rpd-expansion" class="expansible-content" style="display: none;">
+				<p> O Registro de Pensamentos Disfuncionais (RPD) é uma técnica da Terapia Cognitivo-Comportamental (TCC) que ajuda a identificar e reestruturar pensamentos automáticos negativos. Preencher o RPD pode ajudar a tornar mais claro como os pensamentos influenciam as emoções e o comportamento. Isso ajuda a promover uma visão mais equilibrada da situação e a reduzir o impacto dos pensamentos negativos. </p>
+				<p> Assista ao vídeo: <a href="https://www.youtube.com/watch?v=qp8VUlVqooI" target="_blank">Como fazer o RPD</a></p>
+			</div>
+			<audio id="audioRPD" src="https://raw.githubusercontent.com/thaispsicologa/RegistrodePensamentos/main/RPD1.mp3"></audio>
 		</div>
 		<!-- Seção "O que são distorções cognitivas?" -->
 		<div class="expansible-section">
@@ -294,63 +293,67 @@
 		</form>
 		<script>
 			function toggleContent(id) {
-			   var element = document.getElementById(id);
-			   if (element.style.display === "none" || element.style.display === "") {
-			      element.style.display = "block";
-			   } else {
-			      element.style.display = "none";
-			   }
-			}
-			
-			function sendWhatsAppMessage() {
-			    const nome = document.getElementById("nome").value;
-			    const data = document.getElementById("data").value;
-			    const situacao = document.getElementById("situacao").value;
-			    const emocoes = document.getElementById("emocoes").value;
-			    const pensamento = document.getElementById("pensamento").value;
-			    const distorcao = document.getElementById("distorcao").value;
-			    const resposta = document.getElementById("resposta").value;
-			    const emocaoAntes = document.getElementById("emocaoAntes").value;
-			    const emocaoDepois = document.getElementById("emocaoDepois").value;
-			
-			    const q1 = document.getElementById("q1").value;
-			    const q2 = document.getElementById("q2").value;
-			    const q3 = document.getElementById("q3").value;
-			    const q4 = document.getElementById("q4").value;
-			    const q5 = document.getElementById("q5").value;
-			
-			    let message = `Nome: ${nome}%0AData: ${data}%0ASituação: ${situacao}%0AEmoção: ${emocoes}%0APensamento: ${pensamento}%0ADistorção: ${distorcao}%0AResposta Racional: ${resposta}%0AIntensidade da Emoção Antes: ${emocaoAntes}/100%0AIntensidade da Emoção Depois: ${emocaoDepois}/100%0A%0A**Perguntas de Reflexão:**%0A1. O que faz você acreditar que as coisas são assim? ${q1}%0A2. Existe uma outra forma de enxergar isso? ${q3}%0A3. Esse pensamento está ajudando você ou te fazendo mal? ${q4}%0A4. Como você poderia pensar de forma mais útil sobre isso? ${q5}%0A5. Como você se sente com essa situação agora? ${q2}`;
-			
-			    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5535984647323&text=${message}`;
-			    window.open(whatsappUrl, '_blank');
-			}
-			
-			function updateSliderValue(elementId, value) {
-			   document.getElementById(elementId).textContent = value;
-			}
-			// Alterna a exibição do conteúdo expansível
-			function toggleContent(id) {
-			   const element = document.getElementById(id);
-			   if (element.style.display === "none" || element.style.display === "") {
-			      element.style.display = "block";
-			   } else {
-			      element.style.display = "none";
-			   }
-			}
-			
-			// Reproduz áudio
-			function playAudio(audioId) {
-			    const audioElement = document.getElementById(audioId);
-			    if (audioElement.paused) {
-			        audioElement.play();
-			    } else {
-			        audioElement.pause();
-			    }
-			}
-			
-			
+						   var element = document.getElementById(id);
+						   if (element.style.display === "none" || element.style.display === "") {
+						      element.style.display = "block";
+						   } else {
+						      element.style.display = "none";
+						   }
+						}
+						
+						function sendWhatsAppMessage() {
+						    const nome = document.getElementById("nome").value;
+						    const data = document.getElementById("data").value;
+						    const situacao = document.getElementById("situacao").value;
+						    const emocoes = document.getElementById("emocoes").value;
+						    const pensamento = document.getElementById("pensamento").value;
+						    const distorcao = document.getElementById("distorcao").value;
+						    const resposta = document.getElementById("resposta").value;
+						    const emocaoAntes = document.getElementById("emocaoAntes").value;
+						    const emocaoDepois = document.getElementById("emocaoDepois").value;
+						
+						    const q1 = document.getElementById("q1").value;
+						    const q2 = document.getElementById("q2").value;
+						    const q3 = document.getElementById("q3").value;
+						    const q4 = document.getElementById("q4").value;
+						    const q5 = document.getElementById("q5").value;
+						
+						    let message = `Nome: ${nome}%0AData: ${data}%0ASituação: ${situacao}%0AEmoção: ${emocoes}%0APensamento: ${pensamento}%0ADistorção: ${distorcao}%0AResposta Racional: ${resposta}%0AIntensidade da Emoção Antes: ${emocaoAntes}/100%0AIntensidade da Emoção Depois: ${emocaoDepois}/100%0A%0A**Perguntas de Reflexão:**%0A1. O que faz você acreditar que as coisas são assim? ${q1}%0A2. Existe uma outra forma de enxergar isso? ${q3}%0A3. Esse pensamento está ajudando você ou te fazendo mal? ${q4}%0A4. Como você poderia pensar de forma mais útil sobre isso? ${q5}%0A5. Como você se sente com essa situação agora? ${q2}`;
+						
+						    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5535984647323&text=${message}`;
+						    window.open(whatsappUrl, '_blank');
+						}
+						
+						function updateSliderValue(elementId, value) {
+						   document.getElementById(elementId).textContent = value;
+						}
+						// Alterna a exibição do conteúdo expansível
+						function toggleContent(id) {
+						   const element = document.getElementById(id);
+						   if (element.style.display === "none" || element.style.display === "") {
+						      element.style.display = "block";
+						   } else {
+						      element.style.display = "none";
+						   }
+						}
+						
+						// Reproduz áudio
+						function playAudio(audioId) {
+						    const audioElement = document.getElementById(audioId);
+						    if (audioElement.paused) {
+						        audioElement.play();
+						    } else {
+						        audioElement.pause();
+						    }
+						}
 		</script>
 	</main>
+	</main>
+	<footer style="text-align: center; margin-top: 30px; padding: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; font-size: 14px; border-radius: 10px;">
+		<p>© 2025 Thaís Campos Psicóloga Clínica</p>
+		<p>Especialista em Avaliação Psicológica</p>
+	</footer>
+</body>
 </body>
 
 </html>
